@@ -1,11 +1,11 @@
-FROM alpine:3.10
+FROM arm32v6/alpine:3.10
 
 ARG COMMIT_ID
 ARG VERSION=2.1.11
 ARG UID=2999
 ARG GID=2999
 
-LABEL maintainer="Thomas Queste <tom@tomsquest.com>" \
+LABEL maintainer="wanddy <wanddy@gmail.com>" \
       org.label-schema.name="Radicale Docker Image" \
       org.label-schema.description="Enhanced Docker image for Radicale, the CalDAV/CardDAV server" \
       org.label-schema.url="https://github.com/Kozea/Radicale" \
